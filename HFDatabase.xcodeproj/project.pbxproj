@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4AC69D1A241E45000EA74E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AC69C1A241E45000EA74E /* Person.m */; };
 		4FA68AB81A2324E50007ACC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA68AB71A2324E50007ACC8 /* main.m */; };
 		4FA68ABB1A2324E50007ACC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA68ABA1A2324E50007ACC8 /* AppDelegate.m */; };
 		4FA68ABE1A2324E50007ACC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA68ABD1A2324E50007ACC8 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		4FA68AC31A2324E50007ACC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA68AC21A2324E50007ACC8 /* Images.xcassets */; };
 		4FA68AC61A2324E50007ACC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA68AC41A2324E50007ACC8 /* LaunchScreen.xib */; };
 		4FA68AD21A2324E50007ACC8 /* HFDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA68AD11A2324E50007ACC8 /* HFDatabaseTests.m */; };
+		4FA68ADC1A2325300007ACC8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA68ADB1A2325300007ACC8 /* libsqlite3.dylib */; };
+		4FA68ADF1A2325460007ACC8 /* HFDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA68ADE1A2325460007ACC8 /* HFDBManager.m */; };
+		4FABFF9F1A2326E10017CBAC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FABFF9E1A2326E10017CBAC /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F4AC69B1A241E44000EA74E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4F4AC69C1A241E45000EA74E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		4FA68AB21A2324E50007ACC8 /* HFDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA68AB61A2324E50007ACC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA68AB71A2324E50007ACC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,11 @@
 		4FA68ACB1A2324E50007ACC8 /* HFDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA68AD01A2324E50007ACC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA68AD11A2324E50007ACC8 /* HFDatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFDatabaseTests.m; sourceTree = "<group>"; };
+		4FA68ADB1A2325300007ACC8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4FA68ADD1A2325460007ACC8 /* HFDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDBManager.h; sourceTree = "<group>"; };
+		4FA68ADE1A2325460007ACC8 /* HFDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDBManager.m; sourceTree = "<group>"; };
+		4FABFF9D1A2326E10017CBAC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4FABFF9E1A2326E10017CBAC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA68ADC1A2325300007ACC8 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,7 @@
 		4FA68AA91A2324E50007ACC8 = {
 			isa = PBXGroup;
 			children = (
+				4FA68ADB1A2325300007ACC8 /* libsqlite3.dylib */,
 				4FA68AB41A2324E50007ACC8 /* HFDatabase */,
 				4FA68ACE1A2324E50007ACC8 /* HFDatabaseTests */,
 				4FA68AB31A2324E50007ACC8 /* Products */,
@@ -89,6 +102,12 @@
 				4FA68AC21A2324E50007ACC8 /* Images.xcassets */,
 				4FA68AC41A2324E50007ACC8 /* LaunchScreen.xib */,
 				4FA68AB51A2324E50007ACC8 /* Supporting Files */,
+				4FA68ADD1A2325460007ACC8 /* HFDBManager.h */,
+				4FA68ADE1A2325460007ACC8 /* HFDBManager.m */,
+				4FABFF9D1A2326E10017CBAC /* DetailViewController.h */,
+				4FABFF9E1A2326E10017CBAC /* DetailViewController.m */,
+				4F4AC69B1A241E44000EA74E /* Person.h */,
+				4F4AC69C1A241E45000EA74E /* Person.m */,
 			);
 			path = HFDatabase;
 			sourceTree = "<group>";
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FABFF9F1A2326E10017CBAC /* DetailViewController.m in Sources */,
+				4F4AC69D1A241E45000EA74E /* Person.m in Sources */,
 				4FA68ABE1A2324E50007ACC8 /* ViewController.m in Sources */,
 				4FA68ABB1A2324E50007ACC8 /* AppDelegate.m in Sources */,
 				4FA68AB81A2324E50007ACC8 /* main.m in Sources */,
+				4FA68ADF1A2325460007ACC8 /* HFDBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +434,7 @@
 				4FA68AD71A2324E50007ACC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FA68AD81A2324E50007ACC8 /* Build configuration list for PBXNativeTarget "HFDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				4FA68ADA1A2324E50007ACC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
